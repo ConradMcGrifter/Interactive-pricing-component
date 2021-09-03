@@ -54,3 +54,4 @@ const proudOfThisFunc = () => {
 -   [w3 schools - custom range sliders](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
 -   [css tricks](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
 -   [how to style input type range in chrome, firefox and IE](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html)
+-   [youtube video how to style range input](https://www.youtube.com/watch?v=BrpiNUf2XCk)
