@@ -25,6 +25,7 @@ body {
 
 .pricing-range > .slider {
   width: 100%;
+  -webkit-appearance: none;
 }
 
 .pricing-range > .slider:focus {
@@ -32,30 +33,47 @@ body {
 }
 
 .pricing-range > .slider::-webkit-slider-thumb {
-  cursor: pointer;
   -webkit-appearance: none;
-          appearance: none;
-  background: green;
-  height: 2rem;
-  width: 2rem;
+  cursor: pointer;
+  background: turquoise;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+  height: 3rem;
+  width: 3rem;
   border-radius: 999px;
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
+}
+
+.pricing-range > .slider::-webkit-slider-runnable-track {
+  background: lightgray;
+  border: none;
+  height: 1rem;
+  border-radius: 999px;
+}
+
+.pricing-range > .slider:focus::-webkit-slider-thumb {
+  background: pink;
 }
 
 .pricing-range > .slider::-moz-range-thumb {
   cursor: pointer;
-  background: green;
-  height: 2rem;
-  width: 2rem;
+  background: turquoise;
+  height: 3rem;
+  width: 3rem;
   border-radius: 999px;
+  border: none;
 }
 
 .pricing-range > .slider::-moz-range-progress {
-  background-color: red;
+  background-color: turquoise;
   padding: 0.3rem;
+  border-radius: 999px;
 }
 
 .pricing-range > .slider::-moz-range-track {
   background-color: lightgray;
   padding: 0.3rem;
+  border-radius: 999px;
 }
 /*# sourceMappingURL=main.css.map */

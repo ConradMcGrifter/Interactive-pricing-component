@@ -1,51 +1,60 @@
 .pricing-range {
     width: 100%;
     position: relative;
-
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0;
-    //     background: red;
-    //     width: 15%;
-    //     height: 1rem;
-    //     z-index: 1;
-    //     transform: translateY(40%);
-    // }
     > .slider {
         width: 100%;
-        // height: 1rem;
-        // background: lightgray;
+        -webkit-appearance: none;
+
         &:focus {
             outline: none;
         }
 
+        // 🔻  chrome styles 🔻
+
         &::-webkit-slider-thumb {
+            -webkit-appearance: none;
             cursor: pointer;
-            appearance: none;
-            background: green;
-            height: 2rem;
-            width: 2rem;
+            // color: green;
+            background: turquoise;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+            height: 3rem;
+            width: 3rem;
+            border-radius: 999px;
+            transform: translateY(-35%);
+        }
+
+        &::-webkit-slider-runnable-track {
+            background: lightgray;
+            border: none;
+            height: 1rem;
             border-radius: 999px;
         }
+
+        &:focus::-webkit-slider-thumb {
+            background: pink;
+        }
+
+        // 🦊  firefox styles 🦊
 
         &::-moz-range-thumb {
             cursor: pointer;
-            background: green;
-            height: 2rem;
-            width: 2rem;
+            background: turquoise;
+            height: 3rem;
+            width: 3rem;
             border-radius: 999px;
+            border: none;
         }
 
         &::-moz-range-progress {
-            background-color: red;
+            background-color: turquoise;
             padding: 0.3rem;
+            border-radius: 999px;
         }
 
         &::-moz-range-track {
             background-color: lightgray;
             padding: 0.3rem;
+            border-radius: 999px;
         }
     }
 }
