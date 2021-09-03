@@ -1,3 +1,7 @@
 $font-stack: "Manrope", sans-serif;
 
-$colors: ();
+$colors: (
+    primary-soft-cyan: hsl(174, 77%, 80%),
+    primary-strong-cyan: hsl(174, 86%, 45%),
+    neutral-empty-slider-bar: hsl(224, 65%, 95%),
+);

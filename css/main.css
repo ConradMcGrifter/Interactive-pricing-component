@@ -35,7 +35,8 @@ body {
 .pricing-range > .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   cursor: pointer;
-  background: turquoise;
+  background: url("../images/icon-slider.svg") no-repeat, #10d5c2;
+  background-position: center;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
   height: 3rem;
@@ -46,19 +47,16 @@ body {
 }
 
 .pricing-range > .slider::-webkit-slider-runnable-track {
-  background: lightgray;
+  background: #eaeefb;
   border: none;
   height: 1rem;
   border-radius: 999px;
 }
 
-.pricing-range > .slider:focus::-webkit-slider-thumb {
-  background: pink;
-}
-
 .pricing-range > .slider::-moz-range-thumb {
   cursor: pointer;
-  background: turquoise;
+  background: url("../images/icon-slider.svg") no-repeat, #10d5c2;
+  background-position: center;
   height: 3rem;
   width: 3rem;
   border-radius: 999px;
@@ -66,14 +64,22 @@ body {
 }
 
 .pricing-range > .slider::-moz-range-progress {
-  background-color: turquoise;
+  background-color: #a5f3eb;
   padding: 0.3rem;
   border-radius: 999px;
 }
 
 .pricing-range > .slider::-moz-range-track {
-  background-color: lightgray;
+  background-color: #eaeefb;
   padding: 0.3rem;
   border-radius: 999px;
+}
+
+.pricing-range > .slider::-ms-fill-upper {
+  background-color: none;
+}
+
+.pricing-range > .slider::-ms-fill-lower {
+  background-color: #fd0000;
 }
 /*# sourceMappingURL=main.css.map */
