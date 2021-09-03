@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: $font-stack;
+}

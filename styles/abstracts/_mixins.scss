@@ -1,0 +1,12 @@
+@mixin desktopSize {
+    @media only screen and (min-width: 850px) {
+        @content;
+    }
+}
+
+@mixin flexCenter($direction: row) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
