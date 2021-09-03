@@ -53,6 +53,10 @@ body {
   border-radius: 999px;
 }
 
+.pricing-range > .slider:focus::-webkit-slider-thumb {
+  background: pink;
+}
+
 .pricing-range > .slider::-moz-range-thumb {
   cursor: pointer;
   background: url("../images/icon-slider.svg") no-repeat, #10d5c2;
@@ -61,6 +65,18 @@ body {
   width: 3rem;
   border-radius: 999px;
   border: none;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.pricing-range > .slider::-moz-range-thumb:hover {
+  background: url("../images/icon-slider.svg") no-repeat, #7aebe0;
+  background-position: center;
+}
+
+.pricing-range > .slider:focus::-moz-range-thumb {
+  background: url("../images/icon-slider.svg") no-repeat, #0b9385;
+  background-position: center;
 }
 
 .pricing-range > .slider::-moz-range-progress {
@@ -76,10 +92,16 @@ body {
 }
 
 .pricing-range > .slider::-ms-fill-upper {
-  background-color: none;
+  background-color: #eaeefb;
 }
 
 .pricing-range > .slider::-ms-fill-lower {
-  background-color: #fd0000;
+  background-color: #a5f3eb;
+}
+
+#test {
+  opacity: 0;
+  position: absolute;
+  left: -30rem;
 }
 /*# sourceMappingURL=main.css.map */

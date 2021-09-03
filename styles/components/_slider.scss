@@ -21,7 +21,6 @@
             height: 3rem;
             width: 3rem;
             border-radius: 999px;
-
             transform: translateY(-35%);
         }
 
@@ -32,9 +31,9 @@
             border-radius: 999px;
         }
 
-        // &:focus::-webkit-slider-thumb {
-        //     background: pink;
-        // }
+        &:focus::-webkit-slider-thumb {
+            background: pink;
+        }
 
         // 🦊  Firefox styles 🦊
 
@@ -46,6 +45,17 @@
             width: 3rem;
             border-radius: 999px;
             border: none;
+            transition: background 0.25s;
+        }
+
+        &::-moz-range-thumb:hover {
+            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 74%, 70%);
+            background-position: center;
+        }
+
+        &:focus::-moz-range-thumb {
+            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 86%, 31%);
+            background-position: center;
         }
 
         &::-moz-range-progress {
@@ -63,10 +73,16 @@
         // 🌎 IE styles 🌎
 
         &::-ms-fill-upper {
-            background-color: none;
+            background-color: color(neutral-empty-slider-bar);
         }
         &::-ms-fill-lower {
-            background-color: rgb(253, 0, 0);
+            background-color: color(primary-soft-cyan);
         }
     }
+}
+
+#test {
+    opacity: 0;
+    position: absolute;
+    left: -30rem;
 }
