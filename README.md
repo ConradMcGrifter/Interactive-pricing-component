@@ -32,28 +32,25 @@ Users should be able to:
 
 ```css
 > .slider {
-    width: 100%;
-    -webkit-appearance: none;
     //  🔻  these background styles are what makes the progress bar work on chrome ⚠
+    -webkit-appearance: none;
     background: color(neutral-empty-slider-bar);
-    background-image: linear-gradient(
-        color(primary-soft-cyan),
-        color(primary-soft-cyan)
-    );
-    background-size: var(--width, 50%);
+    background-image: linear-gradient(to right, color(primary-soft-cyan), color(primary-soft-cyan));
+    background-size: var(--width, 50%) 100%;
     background-repeat: no-repeat;
     height: 0.9rem;
     border-radius: 999px;
+    // 🔺  these background styles are what makes the progress bar work on chrome ⚠
 }
 ```
 
 ```js
 const setWidth = () => {
-    return SLIDER.value + "%";
+    return SLIDER.value * 16.5 + "%";
 };
 
 SLIDER.addEventListener("input", () => {
-    SLIDER_PSEUDO.style.setProperty("--width", setWidth());
+    SLIDER.style.setProperty("--width", setWidth());
 });
 ```
 

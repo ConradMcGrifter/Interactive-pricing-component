@@ -5,8 +5,8 @@
 
     > .slider {
         width: 100%;
-        -webkit-appearance: none;
         //  🔻  these background styles are what makes the progress bar work on chrome ⚠
+        -webkit-appearance: none;
         background: color(neutral-empty-slider-bar);
         background-image: linear-gradient(
             to right,
@@ -28,8 +28,7 @@
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
             cursor: grab;
-            background: url("../images/icon-slider.svg") no-repeat,
-                color(primary-strong-cyan);
+            background: url("../images/icon-slider.svg") no-repeat, color(primary-strong-cyan);
             background-position: center;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
             height: 4rem;
@@ -40,14 +39,13 @@
         }
 
         &::-webkit-slider-thumb:hover {
-            background: url("../images/icon-slider.svg") no-repeat,
-                hsl(174, 74%, 70%);
+            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 74%, 70%);
             background-position: center;
+            cursor: pointer;
         }
 
         &:focus::-webkit-slider-thumb {
-            background: url("../images/icon-slider.svg") no-repeat,
-                hsl(174, 86%, 31%);
+            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 86%, 31%);
             background-position: center;
             cursor: grabbing;
         }
@@ -63,8 +61,7 @@
         // 🦊  Firefox styles 🦊
 
         &::-moz-range-thumb {
-            background: url("../images/icon-slider.svg") no-repeat,
-                color(primary-strong-cyan);
+            background: url("../images/icon-slider.svg") no-repeat, color(primary-strong-cyan);
             background-position: center;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
             height: 4rem;
@@ -75,15 +72,13 @@
         }
 
         &::-moz-range-thumb:hover {
-            background: url("../images/icon-slider.svg") no-repeat,
-                hsl(174, 74%, 70%);
+            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 74%, 70%);
             background-position: center;
             cursor: grab;
         }
 
         &:focus::-moz-range-thumb {
-            background: url("../images/icon-slider.svg") no-repeat,
-                hsl(174, 86%, 31%);
+            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 86%, 31%);
             background-position: center;
             cursor: grabbing;
         }

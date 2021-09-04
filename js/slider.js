@@ -1,5 +1,5 @@
 const SLIDER = document.querySelector(".slider");
-const TEST = document.querySelector("#focusMe");
+const FOCUS_ME = document.querySelector("#focusMe");
 const SLIDER_PSEUDO = document.querySelector(".pricing-range");
 
 SLIDER.addEventListener("focus", () => {
@@ -7,14 +7,13 @@ SLIDER.addEventListener("focus", () => {
 });
 
 SLIDER.addEventListener("mouseout", () => {
-    console.log("focused");
-    TEST.focus();
+    FOCUS_ME.focus();
 });
 
 const setWidth = () => {
-    return SLIDER.value + "%";
+    return SLIDER.value * 16.5 + "%";
 };
 
 SLIDER.addEventListener("input", () => {
-    SLIDER_PSEUDO.style.setProperty("--width", setWidth());
+    SLIDER.style.setProperty("--width", setWidth());
 });
