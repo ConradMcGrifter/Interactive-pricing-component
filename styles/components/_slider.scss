@@ -1,9 +1,19 @@
 .pricing-range {
     width: 100%;
     position: relative;
+    margin: 1.5rem 0;
+
     > .slider {
         width: 100%;
         -webkit-appearance: none;
+        background-image: linear-gradient(
+            color(primary-soft-cyan),
+            color(primary-soft-cyan)
+        );
+        background-size: var(--width, 50%);
+        background-repeat: no-repeat;
+        height: 0.9rem;
+        border-radius: 999px;
 
         &:focus {
             outline: none;
@@ -18,10 +28,11 @@
                 color(primary-strong-cyan);
             background-position: center;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
-            height: 3rem;
-            width: 3rem;
+            height: 4rem;
+            width: 4rem;
             border-radius: 999px;
-            transform: translateY(-35%);
+            transform: translateY(-40%);
+            box-shadow: 0 0 2px 0 #555;
         }
 
         &::-webkit-slider-thumb:hover {
@@ -39,6 +50,7 @@
 
         &::-webkit-slider-runnable-track {
             background: color(neutral-empty-slider-bar);
+            background: transparent;
             border: none;
             height: 1rem;
             border-radius: 999px;
@@ -51,8 +63,8 @@
                 color(primary-strong-cyan);
             background-position: center;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
-            height: 3rem;
-            width: 3rem;
+            height: 4rem;
+            width: 4rem;
             border-radius: 999px;
             border: none;
             transition: background 0.25s;

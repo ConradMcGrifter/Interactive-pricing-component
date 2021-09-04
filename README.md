@@ -55,3 +55,7 @@ const proudOfThisFunc = () => {
 -   [css tricks](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
 -   [how to style input type range in chrome, firefox and IE](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html)
 -   [youtube video how to style range input](https://www.youtube.com/watch?v=BrpiNUf2XCk)
+
+-   [how to style pseudo elements with css custom properties](https://css-irl.info/quick-tip-style-pseudo-elements-with-javascript-using-custom-properties/) this is how i did the progress track for the slider on chrome
+
+-   [codepen range input](https://codepen.io/tippingpointdev/pen/bGgLqLY)
