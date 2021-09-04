@@ -6,6 +6,8 @@
     > .slider {
         width: 100%;
         -webkit-appearance: none;
+        //  🔻  these background styles are what makes the progress bar work on chrome ⚠
+        background: color(neutral-empty-slider-bar);
         background-image: linear-gradient(
             color(primary-soft-cyan),
             color(primary-soft-cyan)
@@ -14,6 +16,7 @@
         background-repeat: no-repeat;
         height: 0.9rem;
         border-radius: 999px;
+        // 🔺  these background styles are what makes the progress bar work on chrome ⚠
 
         &:focus {
             outline: none;

@@ -27,6 +27,7 @@ body {
 .pricing-range > .slider {
   width: 100%;
   -webkit-appearance: none;
+  background: #eaeefb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a5f3eb), to(#a5f3eb));
   background-image: linear-gradient(#a5f3eb, #a5f3eb);
   background-size: var(--width, 50%);

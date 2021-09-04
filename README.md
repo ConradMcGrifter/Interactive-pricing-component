@@ -30,20 +30,31 @@ Users should be able to:
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-    color: papayawhip;
+> .slider {
+    width: 100%;
+    -webkit-appearance: none;
+    //  🔻  these background styles are what makes the progress bar work on chrome ⚠
+    background: color(neutral-empty-slider-bar);
+    background-image: linear-gradient(
+        color(primary-soft-cyan),
+        color(primary-soft-cyan)
+    );
+    background-size: var(--width, 50%);
+    background-repeat: no-repeat;
+    height: 0.9rem;
+    border-radius: 999px;
 }
 ```
 
 ```js
-const proudOfThisFunc = () => {
-    console.log("🎉");
+const setWidth = () => {
+    return SLIDER.value + "%";
 };
+
+SLIDER.addEventListener("input", () => {
+    SLIDER_PSEUDO.style.setProperty("--width", setWidth());
+});
 ```
 
 ### Useful resources
