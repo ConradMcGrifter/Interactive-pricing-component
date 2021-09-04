@@ -15,9 +15,9 @@
         );
         background-size: var(--width, 50%) 100%;
         background-repeat: no-repeat;
+        // 🔺🔺🔺
         height: 0.9rem;
         border-radius: 999px;
-        // 🔺🔺🔺  these styles are what makes the progress bar work on chrome ⚠
 
         &:focus {
             outline: none;
@@ -116,7 +116,7 @@
         }
     }
 
-    // this is the button that gets focused with javaScript when the mouse leaves the range input slider.
+    // ⚠ this is the button that gets focused with javaScript when the mouse leaves the range input slider.
     // this allows the :focus styles to reset to default
     > #focusMe {
         opacity: 0;
