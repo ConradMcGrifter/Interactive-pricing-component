@@ -9,10 +9,11 @@
         //  🔻  these background styles are what makes the progress bar work on chrome ⚠
         background: color(neutral-empty-slider-bar);
         background-image: linear-gradient(
+            to right,
             color(primary-soft-cyan),
             color(primary-soft-cyan)
         );
-        background-size: var(--width, 50%), 100%;
+        background-size: var(--width, 50%) 100%;
         background-repeat: no-repeat;
         height: 0.9rem;
         border-radius: 999px;
