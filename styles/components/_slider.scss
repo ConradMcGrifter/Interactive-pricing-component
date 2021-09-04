@@ -22,9 +22,10 @@
         &:focus {
             outline: none;
         }
-        //
+
         //  🌀 CHROME STYLES 🌀
 
+        // thumb
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
             cursor: grab;
@@ -39,18 +40,21 @@
             border: none;
         }
 
+        // thumb hover
         &::-webkit-slider-thumb:hover {
             background: url("../images/icon-slider.svg") no-repeat, hsl(174, 74%, 70%);
             background-position: center;
             cursor: pointer;
         }
 
+        // thumb focus
         &:focus::-webkit-slider-thumb {
             background: url("../images/icon-slider.svg") no-repeat, hsl(174, 86%, 31%);
             background-position: center;
             cursor: grabbing;
         }
 
+        // slider track
         &::-webkit-slider-runnable-track {
             background: color(neutral-empty-slider-bar);
             background: transparent;
@@ -61,6 +65,7 @@
 
         // 🦊 Firefox styles 🦊
 
+        // thumb
         &::-moz-range-thumb {
             background: url("../images/icon-slider.svg") no-repeat, color(primary-strong-cyan);
             background-position: center;
@@ -73,24 +78,28 @@
             transition: background 0.25s;
         }
 
+        // thumb hover
         &::-moz-range-thumb:hover {
             background: url("../images/icon-slider.svg") no-repeat, hsl(174, 74%, 70%);
             background-position: center;
             cursor: grab;
         }
 
+        // thumb focus
         &:focus::-moz-range-thumb {
             background: url("../images/icon-slider.svg") no-repeat, hsl(174, 86%, 31%);
             background-position: center;
             cursor: grabbing;
         }
 
+        // progress bar
         &::-moz-range-progress {
             background-color: color(primary-soft-cyan);
             padding: 0.3rem;
             border-radius: 999px;
         }
 
+        // slider track
         &::-moz-range-track {
             background-color: color(neutral-empty-slider-bar);
             padding: 0.3rem;
