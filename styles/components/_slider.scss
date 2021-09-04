@@ -13,15 +13,28 @@
 
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
-            cursor: pointer;
-            // color: green;
-            background: url("../images/icon-slider.svg") no-repeat, color(primary-strong-cyan);
+            cursor: grab;
+            background: url("../images/icon-slider.svg") no-repeat,
+                color(primary-strong-cyan);
             background-position: center;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
             height: 3rem;
             width: 3rem;
             border-radius: 999px;
             transform: translateY(-35%);
+        }
+
+        &::-webkit-slider-thumb:hover {
+            background: url("../images/icon-slider.svg") no-repeat,
+                hsl(174, 74%, 70%);
+            background-position: center;
+        }
+
+        &:focus::-webkit-slider-thumb {
+            background: url("../images/icon-slider.svg") no-repeat,
+                hsl(174, 86%, 31%);
+            background-position: center;
+            cursor: grabbing;
         }
 
         &::-webkit-slider-runnable-track {
@@ -31,15 +44,11 @@
             border-radius: 999px;
         }
 
-        &:focus::-webkit-slider-thumb {
-            background: pink;
-        }
-
         // 🦊  Firefox styles 🦊
 
         &::-moz-range-thumb {
-            cursor: pointer;
-            background: url("../images/icon-slider.svg") no-repeat, color(primary-strong-cyan);
+            background: url("../images/icon-slider.svg") no-repeat,
+                color(primary-strong-cyan);
             background-position: center;
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
             height: 3rem;
@@ -50,13 +59,17 @@
         }
 
         &::-moz-range-thumb:hover {
-            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 74%, 70%);
+            background: url("../images/icon-slider.svg") no-repeat,
+                hsl(174, 74%, 70%);
             background-position: center;
+            cursor: grab;
         }
 
         &:focus::-moz-range-thumb {
-            background: url("../images/icon-slider.svg") no-repeat, hsl(174, 86%, 31%);
+            background: url("../images/icon-slider.svg") no-repeat,
+                hsl(174, 86%, 31%);
             background-position: center;
+            cursor: grabbing;
         }
 
         &::-moz-range-progress {
@@ -80,10 +93,10 @@
             background-color: color(primary-soft-cyan);
         }
     }
-}
 
-#test {
-    opacity: 0;
-    position: absolute;
-    left: -30rem;
+    > #focusMe {
+        opacity: 0;
+        position: absolute;
+        left: -30rem;
+    }
 }

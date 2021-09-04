@@ -1,5 +1,5 @@
 const SLIDER = document.querySelector(".slider");
-const TEST = document.querySelector("#test");
+const TEST = document.querySelector("#focusMe");
 
 SLIDER.addEventListener("focus", () => {
     SLIDER.classList.toggle("drag");
