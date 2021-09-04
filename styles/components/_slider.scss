@@ -1,11 +1,11 @@
-.pricing-range {
+.pricing-slider {
     width: 100%;
     position: relative;
     margin: 1.5rem 0;
 
     > .slider {
         width: 100%;
-        //  🔻  these background styles are what makes the progress bar work on chrome ⚠
+        //  🔻🔻🔻  these styles are what makes the progress bar work on chrome ⚠
         -webkit-appearance: none;
         background: color(neutral-empty-slider-bar);
         background-image: linear-gradient(
@@ -17,13 +17,13 @@
         background-repeat: no-repeat;
         height: 0.9rem;
         border-radius: 999px;
-        // 🔺  these background styles are what makes the progress bar work on chrome ⚠
+        // 🔺🔺🔺  these styles are what makes the progress bar work on chrome ⚠
 
         &:focus {
             outline: none;
         }
-
-        // 🌀 Chrome styles 🌀
+        //
+        //  🌀 CHROME STYLES 🌀
 
         &::-webkit-slider-thumb {
             -webkit-appearance: none;
@@ -35,7 +35,7 @@
             width: 4rem;
             border-radius: 999px;
             transform: translateY(-40%);
-            box-shadow: 0 0 2px 0 #555;
+            box-shadow: 0 0 2px 0 color(primary-soft-cyan);
             border: none;
         }
 
@@ -59,12 +59,13 @@
             border-radius: 999px;
         }
 
-        // 🦊  Firefox styles 🦊
+        // 🦊 Firefox styles 🦊
 
         &::-moz-range-thumb {
             background: url("../images/icon-slider.svg") no-repeat, color(primary-strong-cyan);
             background-position: center;
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+            box-shadow: 0 5px 10px color(primary-soft-cyan);
+
             height: 4rem;
             width: 4rem;
             border-radius: 999px;
@@ -106,6 +107,8 @@
         }
     }
 
+    // this is the button that gets focused with javaScript when the mouse leaves the range input slider.
+    // this allows the :focus styles to reset to default
     > #focusMe {
         opacity: 0;
         position: absolute;
