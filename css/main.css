@@ -55,6 +55,7 @@ body {
           transform: translateY(-40%);
   -webkit-box-shadow: 0 0 2px 0 #555;
           box-shadow: 0 0 2px 0 #555;
+  border: none;
 }
 
 .pricing-range > .slider::-webkit-slider-thumb:hover {
