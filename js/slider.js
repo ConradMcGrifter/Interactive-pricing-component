@@ -10,10 +10,11 @@ SLIDER.addEventListener("mouseout", () => {
     FOCUS_ME.focus();
 });
 
+// calculate the width of the background-image based on the value of the input range
 const setWidth = () => {
-    return SLIDER.value * 16.5 + "%";
+    return SLIDER.value * 25 + "%";
 };
 
 SLIDER.addEventListener("input", () => {
-    SLIDER.style.setProperty("--width", setWidth());
+    SLIDER.style.backgroundSize = setWidth() + " 100%";
 });

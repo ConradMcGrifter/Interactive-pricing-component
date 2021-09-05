@@ -30,7 +30,7 @@ body {
   background: #eaeefb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a5f3eb), to(#a5f3eb));
   background-image: linear-gradient(#a5f3eb, #a5f3eb);
-  background-size: var(--width, 50%) 100%;
+  background-size: 50% 100%;
   background-repeat: no-repeat;
   height: 0.9rem;
   border-radius: 999px;

@@ -9,10 +9,11 @@
         -webkit-appearance: none;
         background: color(neutral-empty-slider-bar);
         background-image: linear-gradient(color(primary-soft-cyan), color(primary-soft-cyan));
-        background-size: var(--width, 50%) 100%;
+        background-size: 50% 100%;
         background-repeat: no-repeat;
-        // 🔺🔺🔺
         height: 0.9rem;
+        // 🔺🔺🔺
+
         border-radius: 999px;
 
         &:focus {
