@@ -1,5 +1,5 @@
-const SLIDER = document.querySelector(".slider");
-const SWITCH_CHECKBOX = document.querySelector("#switch");
+import { SLIDER } from "./slider.js";
+export const SWITCH_CHECKBOX = document.querySelector("#switch");
 
 export const viewsPrice = () => {
     const PAGEVIEWS = document.querySelector(".pageviews");

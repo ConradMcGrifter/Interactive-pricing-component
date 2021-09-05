@@ -2,7 +2,6 @@ import { viewsPrice } from "./priceOutput.js";
 
 export const SLIDER = document.querySelector(".slider");
 const FOCUS_ME = document.querySelector("#focusMe");
-const SLIDER_PSEUDO = document.querySelector(".pricing-range");
 
 SLIDER.addEventListener("focus", () => {
     SLIDER.classList.toggle("drag");
