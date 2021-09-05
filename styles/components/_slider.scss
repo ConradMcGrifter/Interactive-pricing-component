@@ -1,20 +1,19 @@
 .pricing-slider {
     width: 100%;
     position: relative;
-    margin: 1.5rem 0;
+    // margin: 1.5rem 0;
 
     > .slider {
         width: 100%;
         //  🔻🔻🔻  these styles are what makes the progress bar work on chrome ⚠
         -webkit-appearance: none;
+        height: 0.9rem;
         background: color(neutral-empty-slider-bar);
         background-image: linear-gradient(color(primary-soft-cyan), color(primary-soft-cyan));
-        background-size: 50% 100%;
         background-repeat: no-repeat;
-        height: 0.9rem;
-        // 🔺🔺🔺
-
+        background-size: 50% 100%;
         border-radius: 999px;
+        // 🔺🔺🔺
 
         &:focus {
             outline: none;
@@ -55,8 +54,8 @@
         &::-webkit-slider-runnable-track {
             background: color(neutral-empty-slider-bar);
             background: transparent;
-            border: none;
             height: 1rem;
+            border: none;
             border-radius: 999px;
         }
 
@@ -66,12 +65,11 @@
         &::-moz-range-thumb {
             background: url("../images/icon-slider.svg") no-repeat, color(primary-strong-cyan);
             background-position: center;
-            box-shadow: 0 5px 10px color(primary-soft-cyan);
-
             height: 4rem;
             width: 4rem;
-            border-radius: 999px;
             border: none;
+            border-radius: 999px;
+            box-shadow: 0 5px 10px color(primary-soft-cyan);
             transition: background 0.25s;
         }
 

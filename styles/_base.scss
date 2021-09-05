@@ -8,9 +8,13 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    margin: 0;
 }
 
 body {
     font-size: 1.5rem;
     font-family: $font-stack;
+    background: salmon;
+    @include flexCenter(column);
+    padding: 1.5rem;
 }

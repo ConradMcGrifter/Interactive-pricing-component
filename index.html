@@ -11,18 +11,32 @@
         <title>Frontend Mentor | Interactive pricing component</title>
     </head>
     <body>
-        <div class="pricing-slider">
-            <input type="range" class="slider" min="0" max="4" />
-            <button id="focusMe" aria-hidden="true">this button takes focus</button>
+        <div class="pricing-card--container">
+            <div class="pricing-output--wrap">
+                <p class="pageviews">100k PAGEVIEWS</p>
+                <!-- slider -->
+                <div class="pricing-slider">
+                    <input type="range" class="slider" min="0" max="4" />
+                    <button id="focusMe" aria-hidden="true">this button takes focus</button>
+                </div>
+                <p class="price">$16.00 <span>/ month</span></p>
+            </div>
+
+            <!-- choose monthly or yearly section -->
+            <div class="choose-billing--wrap">
+                <label class="billingLabel" for="switch">Monthly Billing</label>
+                <!--billing toggle -->
+                <div class="toggle-switch">
+                    <input type="checkbox" id="switch" class="switchInput" />
+                    <label for="switch" class="switchLabel">
+                        <span class="circle -biggerSwitch"></span>
+                    </label>
+                </div>
+                <label class="billingLabel" for="switch">Yearly Billing</label>
+                <p class="discount">-25%</p>
+            </div>
         </div>
 
-        <!--billing toggle -->
-        <div class="toggle-switch">
-            <input type="checkbox" id="switch" class="switchInput" />
-            <label for="switch" class="switchLabel">
-                <span class="circle -biggerSwitch"></span>
-            </label>
-        </div>
         <!-- Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card required.
         Pageviews $ /month Monthly Billing Yearly Billing 25% discount Unlimited websites 100%
         data ownership Email reports Start my trial -->

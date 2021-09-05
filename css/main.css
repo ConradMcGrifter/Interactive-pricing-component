@@ -11,28 +11,43 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  margin: 0;
 }
 
 body {
   font-size: 1.5rem;
   font-family: "Manrope", sans-serif;
+  background: salmon;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
 }
 
 .pricing-slider {
   width: 100%;
   position: relative;
-  margin: 1.5rem 0;
 }
 
 .pricing-slider > .slider {
   width: 100%;
   -webkit-appearance: none;
+  height: 0.9rem;
   background: #eaeefb;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a5f3eb), to(#a5f3eb));
   background-image: linear-gradient(#a5f3eb, #a5f3eb);
-  background-size: 50% 100%;
   background-repeat: no-repeat;
-  height: 0.9rem;
+  background-size: 50% 100%;
   border-radius: 999px;
 }
 
@@ -74,19 +89,19 @@ body {
 .pricing-slider > .slider::-webkit-slider-runnable-track {
   background: #eaeefb;
   background: transparent;
-  border: none;
   height: 1rem;
+  border: none;
   border-radius: 999px;
 }
 
 .pricing-slider > .slider::-moz-range-thumb {
   background: url("../images/icon-slider.svg") no-repeat, #10d5c2;
   background-position: center;
-  box-shadow: 0 5px 10px #a5f3eb;
   height: 4rem;
   width: 4rem;
-  border-radius: 999px;
   border: none;
+  border-radius: 999px;
+  box-shadow: 0 5px 10px #a5f3eb;
   -webkit-transition: background 0.25s;
   transition: background 0.25s;
 }
@@ -145,18 +160,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 4.5rem;
-  height: 2.6rem;
+  width: 4rem;
+  height: 2rem;
   border-radius: 999px;
   background: darkgray;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
-  padding: 0 0.4rem;
+  padding: 0 0.3rem;
 }
 
 .toggle-switch > .switchLabel .circle {
-  height: 2rem;
-  width: 2rem;
+  height: 1.6rem;
+  width: 1.6rem;
   border-radius: 999px;
   background: white;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.45);
@@ -168,5 +183,69 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background: lightGreen;
+}
+
+.pricing-card--container {
+  width: 100%;
+  max-width: 50rem;
+  background: white;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.pricing-card--container > .pricing-output--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: lightblue;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pricing-card--container > .pricing-output--wrap .pageviews {
+  margin: 0 auto;
+}
+
+.pricing-card--container > .pricing-output--wrap .price {
+  margin: 0 auto;
+}
+
+.pricing-card--container > .pricing-output--wrap .pricing-slider {
+  margin: 1.5rem 1rem;
+}
+
+.pricing-card--container > .choose-billing--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+
+.pricing-card--container > .choose-billing--wrap .toggle-switch {
+  margin: 0 1rem;
+}
+
+.pricing-card--container > .choose-billing--wrap .discount {
+  background: orange;
+  color: orangered;
+  border-radius: 999px;
+  padding: 0.2rem 0.4em;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.pricing-card--container > .choose-billing--wrap .billingLabel {
+  font-size: 1.4rem;
+  color: gray;
 }
 /*# sourceMappingURL=main.css.map */

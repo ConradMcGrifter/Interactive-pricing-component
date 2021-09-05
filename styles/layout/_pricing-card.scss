@@ -1,0 +1,51 @@
+.pricing-card--container {
+    width: 100%;
+    max-width: 50rem;
+    background: white;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    > .pricing-output--wrap {
+        display: flex;
+        background: lightblue;
+        flex-wrap: wrap;
+
+        .pageviews {
+            margin: 0 auto;
+        }
+
+        .price {
+            margin: 0 auto;
+        }
+
+        .pricing-slider {
+            margin: 1.5rem 1rem;
+        }
+    }
+
+    > .choose-billing--wrap {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        .toggle-switch {
+            margin: 0 1rem;
+        }
+
+        .discount {
+            background: orange;
+            color: orangered;
+            border-radius: 999px;
+            padding: 0.2rem 0.4em;
+            margin-left: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .billingLabel {
+            font-size: 1.4rem;
+            color: gray;
+        }
+    }
+}
