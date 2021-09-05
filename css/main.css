@@ -160,8 +160,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 4rem;
-  height: 2rem;
+  width: 4.25rem;
+  height: 2.25rem;
   border-radius: 999px;
   background: darkgray;
   -webkit-transition: background 0.2s ease-in-out;
@@ -187,38 +187,96 @@ body {
 
 .pricing-card--container {
   width: 100%;
-  max-width: 50rem;
+  max-width: 55rem;
   background: white;
-  height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem;
+  padding: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .pricing-card--container {
+    padding: 3rem;
+  }
 }
 
 .pricing-card--container > .pricing-output--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: lightblue;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 50rem;
 }
 
 .pricing-card--container > .pricing-output--wrap .pageviews {
   margin: 0 auto;
+  letter-spacing: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .pricing-card--container > .pricing-output--wrap .pageviews {
+    margin: 0;
+  }
 }
 
 .pricing-card--container > .pricing-output--wrap .price {
   margin: 0 auto;
+  font-size: 2.8rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (min-width: 600px) {
+  .pricing-card--container > .pricing-output--wrap .price {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.pricing-card--container > .pricing-output--wrap .price span {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: gray;
 }
 
 .pricing-card--container > .pricing-output--wrap .pricing-slider {
-  margin: 1.5rem 1rem;
+  margin: 3rem 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .pricing-card--container > .pricing-output--wrap .pricing-slider {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
 }
 
 .pricing-card--container > .choose-billing--wrap {
@@ -228,7 +286,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 35rem;
 }
 
 .pricing-card--container > .choose-billing--wrap .toggle-switch {
@@ -240,12 +303,13 @@ body {
   color: orangered;
   border-radius: 999px;
   padding: 0.2rem 0.4em;
-  margin-left: 1rem;
+  margin-left: 0.25rem;
   font-size: 1.2rem;
 }
 
 .pricing-card--container > .choose-billing--wrap .billingLabel {
   font-size: 1.4rem;
   color: gray;
+  letter-spacing: 0.02rem;
 }
 /*# sourceMappingURL=main.css.map */

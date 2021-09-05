@@ -1,34 +1,67 @@
 .pricing-card--container {
     width: 100%;
-    max-width: 50rem;
+    max-width: 55rem;
     background: white;
-    height: 20rem;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.5rem;
+
+    @include desktopSize {
+        padding: 3rem;
+    }
 
     > .pricing-output--wrap {
         display: flex;
-        background: lightblue;
+        // background: lightblue;
         flex-wrap: wrap;
+        max-width: 50rem;
 
         .pageviews {
             margin: 0 auto;
+            letter-spacing: 0.1rem;
+            display: flex;
+            align-items: center;
+            @include desktopSize {
+                margin: 0;
+            }
         }
 
         .price {
             margin: 0 auto;
+            font-size: 2.8rem;
+            font-weight: 700;
+            @include flexCenter();
+            @include desktopSize {
+                margin: 0;
+                margin-left: auto;
+            }
+
+            span {
+                margin-left: 1rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: gray;
+            }
         }
 
         .pricing-slider {
-            margin: 1.5rem 1rem;
+            margin: 3rem 1rem;
+
+            @include desktopSize {
+                order: 3;
+            }
         }
     }
 
     > .choose-billing--wrap {
         display: flex;
         align-items: center;
-        margin-left: auto;
+        justify-content: flex-end;
+        // margin-left: auto;
+        margin-top: 3rem;
+        width: 100%;
+        max-width: 35rem;
 
         .toggle-switch {
             margin: 0 1rem;
@@ -39,13 +72,14 @@
             color: orangered;
             border-radius: 999px;
             padding: 0.2rem 0.4em;
-            margin-left: 1rem;
+            margin-left: 0.25rem;
             font-size: 1.2rem;
         }
 
         .billingLabel {
             font-size: 1.4rem;
             color: gray;
+            letter-spacing: 0.02rem;
         }
     }
 }
