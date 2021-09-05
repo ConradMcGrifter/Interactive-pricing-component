@@ -9,17 +9,21 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        width: 4.25rem;
-        height: 2.25rem;
+        width: 4.5rem;
+        height: 2.5rem;
         border-radius: 999px;
         background: darkgray;
         transition: background 0.2s ease-in-out;
         padding: 0 0.3rem;
 
+        &:hover {
+            background: color(primary-strong-cyan);
+        }
+
         .circle {
             // box-sizing:unset;
-            height: 1.6rem;
-            width: 1.6rem;
+            height: 1.85rem;
+            width: 1.85rem;
             border-radius: 999px;
             // border: darkslategray solid .1rem;
             background: white;
@@ -29,6 +33,5 @@
 
     > .switchInput:checked + .switchLabel {
         justify-content: flex-end;
-        background: lightGreen;
     }
 }

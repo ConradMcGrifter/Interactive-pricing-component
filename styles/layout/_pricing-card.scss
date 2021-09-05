@@ -6,9 +6,10 @@
     align-items: center;
     flex-direction: column;
     padding: 1.5rem;
+    border-radius: 1rem;
 
     @include desktopSize {
-        padding: 3rem;
+        padding: 3rem 5rem;
     }
 
     > .pricing-output--wrap {
@@ -30,7 +31,7 @@
 
         .price {
             margin: 0 auto;
-            font-size: 2.8rem;
+            font-size: 3.2rem;
             font-weight: 700;
             @include flexCenter();
             @include desktopSize {
@@ -63,19 +64,30 @@
         // margin-left: auto;
         margin-top: 3rem;
         width: 100%;
-        max-width: 35rem;
+        max-width: 42rem;
 
         .toggle-switch {
             margin: 0 1rem;
         }
 
         .discount {
-            background: orange;
-            color: orangered;
+            background: color(primary-light-grayish-red);
+            color: color(primary-light-red);
             border-radius: 999px;
             padding: 0.2rem 0.4em;
-            margin-left: 0.25rem;
+            margin-left: 0.5rem;
             font-size: 1.2rem;
+            @include desktopSize {
+                display: none;
+            }
+        }
+
+        .discountDesktop {
+            @extend .discount;
+            display: none;
+            @include desktopSize {
+                display: block;
+            }
         }
 
         .billingLabel {

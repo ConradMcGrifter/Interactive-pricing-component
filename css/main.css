@@ -160,8 +160,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 4.25rem;
-  height: 2.25rem;
+  width: 4.5rem;
+  height: 2.5rem;
   border-radius: 999px;
   background: darkgray;
   -webkit-transition: background 0.2s ease-in-out;
@@ -169,9 +169,13 @@ body {
   padding: 0 0.3rem;
 }
 
+.toggle-switch > .switchLabel:hover {
+  background: #10d5c2;
+}
+
 .toggle-switch > .switchLabel .circle {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.85rem;
+  width: 1.85rem;
   border-radius: 999px;
   background: white;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.45);
@@ -182,7 +186,6 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: lightGreen;
 }
 
 .pricing-card--container {
@@ -200,11 +203,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1.5rem;
+  border-radius: 1rem;
 }
 
 @media only screen and (min-width: 550px) {
   .pricing-card--container {
-    padding: 3rem;
+    padding: 3rem 5rem;
   }
 }
 
@@ -237,7 +241,7 @@ body {
 
 .pricing-card--container > .pricing-output--wrap .price {
   margin: 0 auto;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,20 +297,36 @@ body {
           justify-content: flex-end;
   margin-top: 3rem;
   width: 100%;
-  max-width: 35rem;
+  max-width: 42rem;
 }
 
 .pricing-card--container > .choose-billing--wrap .toggle-switch {
   margin: 0 1rem;
 }
 
-.pricing-card--container > .choose-billing--wrap .discount {
-  background: orange;
-  color: orangered;
+.pricing-card--container > .choose-billing--wrap .discount, .pricing-card--container > .choose-billing--wrap .discountDesktop {
+  background: #feece7;
+  color: #ff8c66;
   border-radius: 999px;
   padding: 0.2rem 0.4em;
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
   font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .pricing-card--container > .choose-billing--wrap .discount, .pricing-card--container > .choose-billing--wrap .discountDesktop {
+    display: none;
+  }
+}
+
+.pricing-card--container > .choose-billing--wrap .discountDesktop {
+  display: none;
+}
+
+@media only screen and (min-width: 550px) {
+  .pricing-card--container > .choose-billing--wrap .discountDesktop {
+    display: block;
+  }
 }
 
 .pricing-card--container > .choose-billing--wrap .billingLabel {
