@@ -15,6 +15,8 @@ html {
 }
 
 body {
+  min-height: 100%;
+  width: 100%;
   font-size: 1.5rem;
   font-family: "Manrope", sans-serif;
   background: salmon;
@@ -202,17 +204,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.5rem;
   border-radius: 1rem;
 }
 
+.pricing-card--container > .upper--container {
+  padding: 1.5rem;
+  width: 100%;
+}
+
 @media only screen and (min-width: 550px) {
-  .pricing-card--container {
+  .pricing-card--container > .upper--container {
     padding: 3rem 5rem;
   }
 }
 
-.pricing-card--container > .pricing-output--wrap {
+.pricing-card--container > .upper--container > .pricing-output--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,7 +228,7 @@ body {
   max-width: 50rem;
 }
 
-.pricing-card--container > .pricing-output--wrap .pageviews {
+.pricing-card--container > .upper--container > .pricing-output--wrap .pageviews {
   margin: 0 auto;
   letter-spacing: 0.1rem;
   display: -webkit-box;
@@ -234,12 +240,12 @@ body {
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .pricing-output--wrap .pageviews {
+  .pricing-card--container > .upper--container > .pricing-output--wrap .pageviews {
     margin: 0;
   }
 }
 
-.pricing-card--container > .pricing-output--wrap .price {
+.pricing-card--container > .upper--container > .pricing-output--wrap .price {
   margin: 0 auto;
   font-size: 3.2rem;
   font-weight: 700;
@@ -259,25 +265,25 @@ body {
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .pricing-output--wrap .price {
+  .pricing-card--container > .upper--container > .pricing-output--wrap .price {
     margin: 0;
     margin-left: auto;
   }
 }
 
-.pricing-card--container > .pricing-output--wrap .price span {
+.pricing-card--container > .upper--container > .pricing-output--wrap .price span {
   margin-left: 1rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: gray;
 }
 
-.pricing-card--container > .pricing-output--wrap .pricing-slider {
+.pricing-card--container > .upper--container > .pricing-output--wrap .pricing-slider {
   margin: 3rem 1rem;
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .pricing-output--wrap .pricing-slider {
+  .pricing-card--container > .upper--container > .pricing-output--wrap .pricing-slider {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -285,7 +291,7 @@ body {
   }
 }
 
-.pricing-card--container > .choose-billing--wrap {
+.pricing-card--container > .upper--container > .choose-billing--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,11 +306,11 @@ body {
   max-width: 42rem;
 }
 
-.pricing-card--container > .choose-billing--wrap .toggle-switch {
+.pricing-card--container > .upper--container > .choose-billing--wrap .toggle-switch {
   margin: 0 1rem;
 }
 
-.pricing-card--container > .choose-billing--wrap .discount, .pricing-card--container > .choose-billing--wrap .discountDesktop {
+.pricing-card--container > .upper--container > .choose-billing--wrap .discount, .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
   background: #feece7;
   color: #ff8c66;
   border-radius: 999px;
@@ -314,22 +320,22 @@ body {
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .choose-billing--wrap .discount, .pricing-card--container > .choose-billing--wrap .discountDesktop {
+  .pricing-card--container > .upper--container > .choose-billing--wrap .discount, .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
     display: none;
   }
 }
 
-.pricing-card--container > .choose-billing--wrap .discountDesktop {
+.pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
   display: none;
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .choose-billing--wrap .discountDesktop {
+  .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
     display: block;
   }
 }
 
-.pricing-card--container > .choose-billing--wrap .billingLabel {
+.pricing-card--container > .upper--container > .choose-billing--wrap .billingLabel {
   font-size: 1.4rem;
   color: gray;
   letter-spacing: 0.02rem;

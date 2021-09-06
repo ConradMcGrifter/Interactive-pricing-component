@@ -13,29 +13,31 @@
     <body>
         <div class="pricing-card--container">
             <!-- this wrap holds the pricing slider + price and pageview elements -->
-            <div class="pricing-output--wrap">
-                <p class="pageviews">100K PAGEVIEWS</p>
-                <!-- slider -->
-                <div class="pricing-slider">
-                    <input type="range" class="slider" min="0" max="4" />
-                    <button id="focusMe" aria-hidden="true">this button takes focus</button>
+            <div class="upper--container">
+                <div class="pricing-output--wrap">
+                    <p class="pageviews">100K PAGEVIEWS</p>
+                    <!-- slider -->
+                    <div class="pricing-slider">
+                        <input type="range" class="slider" min="0" max="4" />
+                        <button id="focusMe" aria-hidden="true">this button takes focus</button>
+                    </div>
+                    <p class="price">$16.00 <span>/ month</span></p>
                 </div>
-                <p class="price">$16.00 <span>/ month</span></p>
-            </div>
 
-            <!-- this wrap holds the billing toggle switch -->
-            <div class="choose-billing--wrap">
-                <label class="billingLabel" for="switch">Monthly Billing</label>
-                <!--billing toggle -->
-                <div class="toggle-switch">
-                    <input type="checkbox" id="switch" class="switchInput" />
-                    <label for="switch" class="switchLabel">
-                        <span class="circle -biggerSwitch"></span>
-                    </label>
+                <!-- this wrap holds the billing toggle switch -->
+                <div class="choose-billing--wrap">
+                    <label class="billingLabel" for="switch">Monthly Billing</label>
+                    <!--billing toggle -->
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="switch" class="switchInput" />
+                        <label for="switch" class="switchLabel">
+                            <span class="circle -biggerSwitch"></span>
+                        </label>
+                    </div>
+                    <label class="billingLabel" for="switch">Yearly Billing</label>
+                    <p class="discount">-25%</p>
+                    <p class="discountDesktop">25% discount</p>
                 </div>
-                <label class="billingLabel" for="switch">Yearly Billing</label>
-                <p class="discount">-25%</p>
-                <p class="discountDesktop">25% discount</p>
             </div>
         </div>
 
