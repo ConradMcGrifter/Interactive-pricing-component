@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     border-radius: 1rem;
+    box-shadow: 0 10px 15px 10px rgba(24, 24, 24, 0.068);
 
     > .upper--container {
         padding: 3rem 1.5rem;
@@ -26,6 +27,7 @@
             max-width: 50rem;
 
             .pageviews {
+                color: color(neutral-lighter-dark-desaturated-blue);
                 margin: 0 auto;
                 letter-spacing: 0.1rem;
                 display: flex;
@@ -36,6 +38,7 @@
             }
 
             .price {
+                color: color(neutral-dark-desaturated-blue);
                 margin: 0 auto;
                 font-size: 3.6rem;
                 font-weight: 700;
@@ -49,7 +52,7 @@
                     margin-left: 0.5rem;
                     font-size: 1.5rem;
                     font-weight: 500;
-                    color: gray;
+                    color: color(neutral-lighter-dark-desaturated-blue);
                 }
             }
 
@@ -68,10 +71,10 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            // margin-left: auto;
             margin-top: 3rem;
             width: 100%;
             max-width: 33ch;
+            flex-wrap: wrap;
             @include desktopSize {
                 max-width: 42rem;
             }
@@ -103,8 +106,11 @@
 
             .billingLabel {
                 font-size: 1.3rem;
-                color: gray;
+                color: color(neutral-lighter-dark-desaturated-blue);
                 letter-spacing: 0.02rem;
+                @include desktopSize {
+                    font-size: 1.4rem;
+                }
             }
         }
     }
@@ -126,6 +132,7 @@
             }
 
             .listItem {
+                color: color(neutral-lighter-dark-desaturated-blue);
                 margin-top: 1rem;
                 position: relative;
                 font-size: 1.4rem;
@@ -142,11 +149,15 @@
         }
 
         .start-trial-link {
-            background: navy;
+            background: color(neutral-dark-desaturated-blue);
+            color: color(neutral-light-grayish-blue);
             padding: 1.25rem 5rem 1.35rem 5rem;
             border-radius: 999px;
-            color: white;
-            margin-top: 2rem;
+            margin-top: 3rem;
+
+            @include desktopSize {
+                margin-top: 0;
+            }
         }
     }
 }

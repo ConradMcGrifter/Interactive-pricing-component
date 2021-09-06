@@ -20,7 +20,7 @@ body {
   width: 100%;
   font-size: 1.5rem;
   font-family: "Manrope", sans-serif;
-  background: salmon;
+  background: #fafbff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +174,7 @@ a {
   width: 4.5rem;
   height: 2.5rem;
   border-radius: 999px;
-  background: darkgray;
+  background: #cdd7ee;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
   padding: 0 0.3rem;
@@ -214,6 +214,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 1rem;
+  -webkit-box-shadow: 0 10px 15px 10px rgba(24, 24, 24, 0.068);
+          box-shadow: 0 10px 15px 10px rgba(24, 24, 24, 0.068);
 }
 
 .pricing-card--container > .upper--container, .pricing-card--container > .lower--container {
@@ -248,6 +250,7 @@ a {
 }
 
 .pricing-card--container > .upper--container > .pricing-output--wrap .pageviews, .pricing-card--container > .lower--container > .pricing-output--wrap .pageviews {
+  color: #686f87;
   margin: 0 auto;
   letter-spacing: 0.1rem;
   display: -webkit-box;
@@ -265,6 +268,7 @@ a {
 }
 
 .pricing-card--container > .upper--container > .pricing-output--wrap .price, .pricing-card--container > .lower--container > .pricing-output--wrap .price {
+  color: #293356;
   margin: 0 auto;
   font-size: 3.6rem;
   font-weight: 700;
@@ -294,7 +298,7 @@ a {
   margin-left: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
-  color: gray;
+  color: #686f87;
 }
 
 .pricing-card--container > .upper--container > .pricing-output--wrap .pricing-slider, .pricing-card--container > .lower--container > .pricing-output--wrap .pricing-slider {
@@ -323,6 +327,8 @@ a {
   margin-top: 3rem;
   width: 100%;
   max-width: 33ch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media only screen and (min-width: 550px) {
@@ -362,8 +368,14 @@ a {
 
 .pricing-card--container > .upper--container > .choose-billing--wrap .billingLabel, .pricing-card--container > .lower--container > .choose-billing--wrap .billingLabel {
   font-size: 1.3rem;
-  color: gray;
+  color: #686f87;
   letter-spacing: 0.02rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .pricing-card--container > .upper--container > .choose-billing--wrap .billingLabel, .pricing-card--container > .lower--container > .choose-billing--wrap .billingLabel {
+    font-size: 1.4rem;
+  }
 }
 
 .pricing-card--container > .lower--container {
@@ -407,6 +419,7 @@ a {
 }
 
 .pricing-card--container > .lower--container .benefits-list .listItem {
+  color: #686f87;
   margin-top: 1rem;
   position: relative;
   font-size: 1.4rem;
@@ -423,10 +436,16 @@ a {
 }
 
 .pricing-card--container > .lower--container .start-trial-link {
-  background: navy;
+  background: #293356;
+  color: #cdd7ee;
   padding: 1.25rem 5rem 1.35rem 5rem;
   border-radius: 999px;
-  color: white;
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .pricing-card--container > .lower--container .start-trial-link {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
