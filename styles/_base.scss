@@ -9,6 +9,7 @@ html {
 *::after {
     box-sizing: inherit;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -19,4 +20,12 @@ body {
     background: salmon;
     @include flexCenter(column);
     padding: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

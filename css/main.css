@@ -12,6 +12,7 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -34,6 +35,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .pricing-slider {
@@ -207,18 +216,28 @@ body {
   border-radius: 1rem;
 }
 
-.pricing-card--container > .upper--container {
-  padding: 1.5rem;
+.pricing-card--container > .upper--container, .pricing-card--container > .lower--container {
+  padding: 3rem 1.5rem;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .upper--container {
-    padding: 3rem 5rem;
+  .pricing-card--container > .upper--container, .pricing-card--container > .lower--container {
+    padding: 5rem;
   }
 }
 
-.pricing-card--container > .upper--container > .pricing-output--wrap {
+.pricing-card--container > .upper--container > .pricing-output--wrap, .pricing-card--container > .lower--container > .pricing-output--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +247,7 @@ body {
   max-width: 50rem;
 }
 
-.pricing-card--container > .upper--container > .pricing-output--wrap .pageviews {
+.pricing-card--container > .upper--container > .pricing-output--wrap .pageviews, .pricing-card--container > .lower--container > .pricing-output--wrap .pageviews {
   margin: 0 auto;
   letter-spacing: 0.1rem;
   display: -webkit-box;
@@ -240,14 +259,14 @@ body {
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .upper--container > .pricing-output--wrap .pageviews {
+  .pricing-card--container > .upper--container > .pricing-output--wrap .pageviews, .pricing-card--container > .lower--container > .pricing-output--wrap .pageviews {
     margin: 0;
   }
 }
 
-.pricing-card--container > .upper--container > .pricing-output--wrap .price {
+.pricing-card--container > .upper--container > .pricing-output--wrap .price, .pricing-card--container > .lower--container > .pricing-output--wrap .price {
   margin: 0 auto;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,25 +284,25 @@ body {
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .upper--container > .pricing-output--wrap .price {
+  .pricing-card--container > .upper--container > .pricing-output--wrap .price, .pricing-card--container > .lower--container > .pricing-output--wrap .price {
     margin: 0;
     margin-left: auto;
   }
 }
 
-.pricing-card--container > .upper--container > .pricing-output--wrap .price span {
-  margin-left: 1rem;
+.pricing-card--container > .upper--container > .pricing-output--wrap .price span, .pricing-card--container > .lower--container > .pricing-output--wrap .price span {
+  margin-left: 0.5rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: gray;
 }
 
-.pricing-card--container > .upper--container > .pricing-output--wrap .pricing-slider {
+.pricing-card--container > .upper--container > .pricing-output--wrap .pricing-slider, .pricing-card--container > .lower--container > .pricing-output--wrap .pricing-slider {
   margin: 3rem 1rem;
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .upper--container > .pricing-output--wrap .pricing-slider {
+  .pricing-card--container > .upper--container > .pricing-output--wrap .pricing-slider, .pricing-card--container > .lower--container > .pricing-output--wrap .pricing-slider {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -291,7 +310,7 @@ body {
   }
 }
 
-.pricing-card--container > .upper--container > .choose-billing--wrap {
+.pricing-card--container > .upper--container > .choose-billing--wrap, .pricing-card--container > .lower--container > .choose-billing--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,14 +322,20 @@ body {
           justify-content: flex-end;
   margin-top: 3rem;
   width: 100%;
-  max-width: 42rem;
+  max-width: 33ch;
 }
 
-.pricing-card--container > .upper--container > .choose-billing--wrap .toggle-switch {
+@media only screen and (min-width: 550px) {
+  .pricing-card--container > .upper--container > .choose-billing--wrap, .pricing-card--container > .lower--container > .choose-billing--wrap {
+    max-width: 42rem;
+  }
+}
+
+.pricing-card--container > .upper--container > .choose-billing--wrap .toggle-switch, .pricing-card--container > .lower--container > .choose-billing--wrap .toggle-switch {
   margin: 0 1rem;
 }
 
-.pricing-card--container > .upper--container > .choose-billing--wrap .discount, .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
+.pricing-card--container > .upper--container > .choose-billing--wrap .discount, .pricing-card--container > .lower--container > .choose-billing--wrap .discount, .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop, .pricing-card--container > .lower--container > .choose-billing--wrap .discountDesktop {
   background: #feece7;
   color: #ff8c66;
   border-radius: 999px;
@@ -320,24 +345,88 @@ body {
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .upper--container > .choose-billing--wrap .discount, .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
+  .pricing-card--container > .upper--container > .choose-billing--wrap .discount, .pricing-card--container > .lower--container > .choose-billing--wrap .discount, .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop, .pricing-card--container > .lower--container > .choose-billing--wrap .discountDesktop {
     display: none;
   }
 }
 
-.pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
+.pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop, .pricing-card--container > .lower--container > .choose-billing--wrap .discountDesktop {
   display: none;
 }
 
 @media only screen and (min-width: 550px) {
-  .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop {
+  .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop, .pricing-card--container > .lower--container > .choose-billing--wrap .discountDesktop {
     display: block;
   }
 }
 
-.pricing-card--container > .upper--container > .choose-billing--wrap .billingLabel {
-  font-size: 1.4rem;
+.pricing-card--container > .upper--container > .choose-billing--wrap .billingLabel, .pricing-card--container > .lower--container > .choose-billing--wrap .billingLabel {
+  font-size: 1.3rem;
   color: gray;
   letter-spacing: 0.02rem;
+}
+
+.pricing-card--container > .lower--container {
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 550px) {
+  .pricing-card--container > .lower--container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.pricing-card--container > .lower--container .benefits-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 550px) {
+  .pricing-card--container > .lower--container .benefits-list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.pricing-card--container > .lower--container .benefits-list .listItem {
+  margin-top: 1rem;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.pricing-card--container > .lower--container .benefits-list .listItem::before {
+  content: url("../images/icon-check.svg");
+  position: absolute;
+  color: green;
+  left: -2rem;
+  top: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+.pricing-card--container > .lower--container .start-trial-link {
+  background: navy;
+  padding: 1.25rem 5rem 1.35rem 5rem;
+  border-radius: 999px;
+  color: white;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

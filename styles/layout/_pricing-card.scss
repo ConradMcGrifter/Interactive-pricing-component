@@ -8,11 +8,14 @@
     border-radius: 1rem;
 
     > .upper--container {
-        padding: 1.5rem;
+        padding: 3rem 1.5rem;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @include desktopSize {
-            padding: 3rem 5rem;
+            padding: 5rem;
         }
 
         > .pricing-output--wrap {
@@ -34,7 +37,7 @@
 
             .price {
                 margin: 0 auto;
-                font-size: 3.2rem;
+                font-size: 3.6rem;
                 font-weight: 700;
                 @include flexCenter();
                 @include desktopSize {
@@ -43,7 +46,7 @@
                 }
 
                 span {
-                    margin-left: 1rem;
+                    margin-left: 0.5rem;
                     font-size: 1.5rem;
                     font-weight: 500;
                     color: gray;
@@ -68,7 +71,10 @@
             // margin-left: auto;
             margin-top: 3rem;
             width: 100%;
-            max-width: 42rem;
+            max-width: 33ch;
+            @include desktopSize {
+                max-width: 42rem;
+            }
 
             // 🔻this is the toggle component
             .toggle-switch {
@@ -96,10 +102,51 @@
             }
 
             .billingLabel {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 color: gray;
                 letter-spacing: 0.02rem;
             }
+        }
+    }
+
+    > .lower--container {
+        @extend .upper--container;
+        padding-top: 0;
+
+        @include desktopSize {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .benefits-list {
+            @include flexCenter(column);
+
+            @include desktopSize {
+                align-items: flex-start;
+            }
+
+            .listItem {
+                margin-top: 1rem;
+                position: relative;
+                font-size: 1.4rem;
+                &::before {
+                    content: url("../images/icon-check.svg");
+                    position: absolute;
+                    color: green;
+                    left: -2rem;
+                    top: 0;
+                    height: 1rem;
+                    width: 1rem;
+                }
+            }
+        }
+
+        .start-trial-link {
+            background: navy;
+            padding: 1.25rem 5rem 1.35rem 5rem;
+            border-radius: 999px;
+            color: white;
+            margin-top: 2rem;
         }
     }
 }
