@@ -38,6 +38,13 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: url("../images/bg-pattern.svg") no-repeat;
+  background-size: 100% 50%;
+}
+
+@media only screen and (min-width: 550px) {
+  body {
+    background-size: contain;
+  }
 }
 
 li {
@@ -77,13 +84,13 @@ a {
   background-position: center;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
-  height: 4rem;
-  width: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 999px;
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
-  -webkit-box-shadow: 0 0 2px 0 #a5f3eb;
-          box-shadow: 0 0 2px 0 #a5f3eb;
+  -webkit-box-shadow: 0 5px 10px rgba(16, 213, 194, 0.767);
+          box-shadow: 0 5px 10px rgba(16, 213, 194, 0.767);
   border: none;
 }
 
@@ -111,11 +118,11 @@ a {
 .pricing-slider > .slider::-moz-range-thumb {
   background: url("../images/icon-slider.svg") no-repeat, #10d5c2;
   background-position: center;
-  height: 4rem;
-  width: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border: none;
   border-radius: 999px;
-  box-shadow: 0 5px 10px #a5f3eb;
+  box-shadow: 0 5px 15px rgba(16, 213, 194, 0.767);
   -webkit-transition: background 0.25s;
   transition: background 0.25s;
 }
@@ -248,13 +255,13 @@ a {
 }
 
 .header--wrap .heading {
-  font-size: clamp(2.2rem, 5vw, 2.7rem);
+  font-size: clamp(2.2rem, 5vw, 2.9rem);
   color: #293356;
 }
 
 .header--wrap .subheading {
   margin-top: 0.5rem;
-  font-size: clamp(1.4rem, 5vw, 1.5rem);
+  font-size: clamp(1.4rem, 5vw, 1.6rem);
   font-weight: 600;
   max-width: 22ch;
   line-height: 1.6;
@@ -319,6 +326,7 @@ a {
 
 .pricing-card--container > .upper--container > .pricing-output--wrap .pageviews, .pricing-card--container > .lower--container > .pricing-output--wrap .pageviews {
   color: rgba(96, 103, 123, 0.842);
+  font-weight: 800;
   margin: 0 auto;
   letter-spacing: 0.1rem;
   display: -webkit-box;
@@ -364,8 +372,8 @@ a {
 
 .pricing-card--container > .upper--container > .pricing-output--wrap .price span, .pricing-card--container > .lower--container > .pricing-output--wrap .price span {
   margin-left: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 800;
   color: rgba(96, 103, 123, 0.842);
 }
 
@@ -401,7 +409,7 @@ a {
 
 @media only screen and (min-width: 550px) {
   .pricing-card--container > .upper--container > .choose-billing--wrap, .pricing-card--container > .lower--container > .choose-billing--wrap {
-    max-width: 42rem;
+    max-width: 43rem;
   }
 }
 
@@ -425,6 +433,7 @@ a {
 }
 
 .pricing-card--container > .upper--container > .choose-billing--wrap .discountDesktop, .pricing-card--container > .lower--container > .choose-billing--wrap .discountDesktop {
+  padding: 0.2rem 0.6rem;
   display: none;
 }
 
@@ -511,6 +520,10 @@ a {
   padding: 1.25rem 5rem 1.35rem 5rem;
   border-radius: 999px;
   margin-top: 3rem;
+}
+
+.pricing-card--container > .lower--container .start-trial-link:hover {
+  color: white;
 }
 
 @media only screen and (min-width: 550px) {

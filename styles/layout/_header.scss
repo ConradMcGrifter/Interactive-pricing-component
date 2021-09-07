@@ -10,13 +10,13 @@
     }
 
     .heading {
-        font-size: clamp(2.2rem, 5vw, 2.7rem);
+        font-size: clamp(2.2rem, 5vw, 2.9rem);
         color: color(neutral-dark-desaturated-blue);
     }
 
     .subheading {
         margin-top: 0.5rem;
-        font-size: clamp(1.4rem, 5vw, 1.5rem);
+        font-size: clamp(1.4rem, 5vw, 1.6rem);
         font-weight: 600;
         max-width: 22ch;
         line-height: 1.6;

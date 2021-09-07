@@ -27,6 +27,7 @@
 
             .pageviews {
                 color: color(neutral-lighter-dark-desaturated-blue);
+                font-weight: 800;
                 margin: 0 auto;
                 letter-spacing: 0.1rem;
                 display: flex;
@@ -49,8 +50,8 @@
 
                 span {
                     margin-left: 0.5rem;
-                    font-size: 1.5rem;
-                    font-weight: 500;
+                    font-size: 1.6rem;
+                    font-weight: 800;
                     color: color(neutral-lighter-dark-desaturated-blue);
                 }
             }
@@ -75,7 +76,7 @@
             max-width: 33ch;
             flex-wrap: wrap;
             @include desktopSize {
-                max-width: 42rem;
+                max-width: 43rem;
             }
 
             // 🔻this is the toggle component
@@ -97,6 +98,7 @@
 
             .discountDesktop {
                 @extend .discount;
+                padding: 0.2rem 0.6rem;
                 display: none;
                 @include desktopSize {
                     display: block;
@@ -155,6 +157,10 @@
             padding: 1.25rem 5rem 1.35rem 5rem;
             border-radius: 999px;
             margin-top: 3rem;
+
+            &:hover {
+                color: white;
+            }
 
             @include desktopSize {
                 margin-top: 0;
