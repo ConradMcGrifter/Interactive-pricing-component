@@ -67,3 +67,15 @@ export const viewsPrice = () => {
 SWITCH_CHECKBOX.addEventListener("change", () => {
     viewsPrice();
 });
+
+// this makes the toggle switch work with keyboards
+document.querySelector(".switchLabel").addEventListener("keydown", (e) => {
+    if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+        if (SWITCH_CHECKBOX.checked == true) {
+            SWITCH_CHECKBOX.checked = false;
+        } else {
+            SWITCH_CHECKBOX.checked = true;
+        }
+    }
+    viewsPrice();
+});
