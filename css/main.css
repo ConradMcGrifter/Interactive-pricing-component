@@ -196,6 +196,10 @@ a {
   background: #10d5c2;
 }
 
+.toggle-switch > .switchLabel:focus {
+  background: #10d5c2;
+}
+
 .toggle-switch > .switchLabel .circle {
   height: 1.85rem;
   width: 1.85rem;

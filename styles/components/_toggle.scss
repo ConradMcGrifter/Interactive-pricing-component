@@ -20,6 +20,10 @@
             background: color(primary-strong-cyan);
         }
 
+        &:focus {
+            background: color(primary-strong-cyan);
+        }
+
         .circle {
             // box-sizing:unset;
             height: 1.85rem;
