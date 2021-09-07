@@ -14,12 +14,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./finalScreenshot.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Link](https://conradmcgrifter.github.io/Interactive-pricing-component/)
 
 ## My process
 
@@ -31,26 +30,29 @@ Users should be able to:
 ### What I learned
 
 ```css
-> .slider {
-    //  🔻  these background styles are what makes the progress bar work on chrome ⚠
-    -webkit-appearance: none;
-    background: color(neutral-empty-slider-bar);
-    background-image: linear-gradient(to right, color(primary-soft-cyan), color(primary-soft-cyan));
-    background-size: var(--width, 50%) 100%;
-    background-repeat: no-repeat;
-    height: 0.9rem;
-    border-radius: 999px;
-    // 🔺  these background styles are what makes the progress bar work on chrome ⚠
-}
+ > .slider {
+        width: 100%;
+        //  🔻🔻🔻  these styles are what makes the progress bar work on chrome ⚠
+        -webkit-appearance: none;
+        height: 0.9rem;
+        background: color(neutral-empty-slider-bar);
+        background-image: linear-gradient(color(primary-soft-cyan), color(primary-soft-cyan));
+        background-repeat: no-repeat;
+        background-size: 50% 100%;
+        border-radius: 999px;
+        // 🔺🔺🔺
 ```
 
 ```js
+// calculate the width of the background-image based on the value of the input range
 const setWidth = () => {
-    return SLIDER.value * 16.5 + "%";
+    return SLIDER.value * 25 + "%";
 };
 
+// when the input range is changed, calculate the size of the background-image and evaluate what the pageviews and price text should be
 SLIDER.addEventListener("input", () => {
-    SLIDER.style.setProperty("--width", setWidth());
+    SLIDER.style.backgroundSize = setWidth() + " 100%";
+    viewsPrice();
 });
 ```
 
@@ -64,6 +66,5 @@ SLIDER.addEventListener("input", () => {
 -   [how to style input type range in chrome, firefox and IE](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html)
 -   [youtube video how to style range input](https://www.youtube.com/watch?v=BrpiNUf2XCk)
 
--   [how to style pseudo elements with css custom properties](https://css-irl.info/quick-tip-style-pseudo-elements-with-javascript-using-custom-properties/) this is how i did the progress track for the slider on chrome
-
+-   [how to style pseudo elements with css custom properties](https://css-irl.info/quick-tip-style-pseudo-elements-with-javascript-using-custom-properties/) this is how i did
 -   [codepen range input](https://codepen.io/tippingpointdev/pen/bGgLqLY)
