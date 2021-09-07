@@ -23,7 +23,7 @@ body {
     background-image: url("../images/bg-pattern.svg");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 50%;
+    background-size: 100% 350px;
 
     @include desktopSize {
         background-size: contain;
