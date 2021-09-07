@@ -38,7 +38,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: url("../images/bg-pattern.svg") no-repeat;
-  background-size: 100% 50%;
+  background-size: 100% 50vh;
 }
 
 @media only screen and (min-width: 550px) {
