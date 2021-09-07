@@ -11,44 +11,50 @@
         <title>Frontend Mentor | Interactive pricing component</title>
     </head>
     <body>
-        <div class="pricing-card--container">
-            <!-- this wrap holds the pricing slider + price and pageview elements -->
-            <div class="upper--container">
-                <div class="pricing-output--wrap">
-                    <p class="pageviews">100K PAGEVIEWS</p>
-                    <!-- slider -->
-                    <div class="pricing-slider">
-                        <input type="range" class="slider" min="0" max="4" />
-                        <button id="focusMe" aria-hidden="true">this button takes focus</button>
+        <main class="main">
+            <header class="header--wrap">
+                <h1 class="heading">Simple, traffic-based pricing</h1>
+                <h2 class="subheading">Sign-up for our 30-day trial. No credit card required</h2>
+            </header>
+            <div class="pricing-card--container">
+                <!-- this wrap holds the pricing slider + price and pageview elements -->
+                <div class="upper--container">
+                    <div class="pricing-output--wrap">
+                        <p class="pageviews">100K PAGEVIEWS</p>
+                        <!-- slider -->
+                        <div class="pricing-slider">
+                            <input type="range" class="slider" min="0" max="4" />
+                            <button id="focusMe" aria-hidden="true">this button takes focus</button>
+                        </div>
+                        <p class="price">$16.00 <span class="perMonth">/ month</span></p>
                     </div>
-                    <p class="price">$16.00 <span class="perMonth">/ month</span></p>
+
+                    <!-- this wrap holds the billing toggle switch -->
+                    <div class="choose-billing--wrap">
+                        <label class="billingLabel" for="switch">Monthly Billing</label>
+                        <!--billing toggle -->
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="switch" class="switchInput" />
+                            <label for="switch" class="switchLabel">
+                                <span class="circle -biggerSwitch"></span>
+                            </label>
+                        </div>
+                        <label class="billingLabel" for="switch">Yearly Billing</label>
+                        <p class="discount">-25%</p>
+                        <p class="discountDesktop">25% discount</p>
+                    </div>
                 </div>
 
-                <!-- this wrap holds the billing toggle switch -->
-                <div class="choose-billing--wrap">
-                    <label class="billingLabel" for="switch">Monthly Billing</label>
-                    <!--billing toggle -->
-                    <div class="toggle-switch">
-                        <input type="checkbox" id="switch" class="switchInput" />
-                        <label for="switch" class="switchLabel">
-                            <span class="circle -biggerSwitch"></span>
-                        </label>
-                    </div>
-                    <label class="billingLabel" for="switch">Yearly Billing</label>
-                    <p class="discount">-25%</p>
-                    <p class="discountDesktop">25% discount</p>
+                <div class="lower--container">
+                    <ul class="benefits-list">
+                        <li class="listItem">Unlimted websites</li>
+                        <li class="listItem">100% data ownership</li>
+                        <li class="listItem">Email reports</li>
+                    </ul>
+                    <a href="#!" class="start-trial-link">Start my trial</a>
                 </div>
             </div>
-
-            <div class="lower--container">
-                <ul class="benefits-list">
-                    <li class="listItem">Unlimted websites</li>
-                    <li class="listItem">100% data ownership</li>
-                    <li class="listItem">Email reports</li>
-                </ul>
-                <a href="#!" class="start-trial-link">Start my trial</a>
-            </div>
-        </div>
+        </main>
 
         <!-- Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card required.
         Pageviews $ /month Monthly Billing Yearly Billing 25% discount Unlimited websites 100%

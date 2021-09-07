@@ -1,0 +1,29 @@
+.header--wrap {
+    text-align: center;
+    @include flexCenter(column);
+    padding: 6rem 0;
+    background: url("../images/pattern-circles.svg") no-repeat;
+    background-position: center;
+
+    @include desktopSize {
+        margin-bottom: 3rem;
+    }
+
+    .heading {
+        font-size: clamp(2.2rem, 5vw, 2.7rem);
+        color: color(neutral-dark-desaturated-blue);
+    }
+
+    .subheading {
+        margin-top: 0.5rem;
+        font-size: clamp(1.4rem, 5vw, 1.5rem);
+        font-weight: 600;
+        max-width: 22ch;
+        line-height: 1.6;
+        color: color(neutral-grayish-blue);
+
+        @include desktopSize {
+            max-width: unset;
+        }
+    }
+}

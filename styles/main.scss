@@ -2,4 +2,4 @@
 @import "abstracts/functions", "abstracts/mixins", "abstracts/variables";
 @import "base";
 @import "components/slider", "components/toggle";
-@import "layout/pricing-card";
+@import "layout/main--container", "layout/header", "layout/pricing-card";

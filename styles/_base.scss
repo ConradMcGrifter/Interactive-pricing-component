@@ -19,7 +19,8 @@ body {
     font-family: $font-stack;
     background: color(neutral-very-pale-blue);
     @include flexCenter(column);
-    padding: 1.5rem;
+    justify-content: flex-start;
+    background: url("../images/bg-pattern.svg") no-repeat;
 }
 
 li {

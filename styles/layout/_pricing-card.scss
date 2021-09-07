@@ -1,6 +1,6 @@
 .pricing-card--container {
     width: 100%;
-    max-width: 55rem;
+    max-width: 58rem;
     background: white;
     display: flex;
     align-items: center;
@@ -21,7 +21,6 @@
 
         > .pricing-output--wrap {
             display: flex;
-            // background: lightblue;
             flex-wrap: wrap;
             width: 100%;
             max-width: 50rem;
@@ -40,7 +39,7 @@
             .price {
                 color: color(neutral-dark-desaturated-blue);
                 margin: 0 auto;
-                font-size: 3.6rem;
+                font-size: clamp(3.6rem, 6vw, 4rem);
                 font-weight: 700;
                 @include flexCenter();
                 @include desktopSize {
@@ -58,7 +57,7 @@
 
             // 🔻this is the slider component
             .pricing-slider {
-                margin: 3rem 1rem;
+                margin: 4rem 1rem;
 
                 @include desktopSize {
                     order: 3;
@@ -117,11 +116,13 @@
 
     > .lower--container {
         @extend .upper--container;
-        padding-top: 0;
+        padding-top: 1.5rem;
+        border-top: solid 1px rgba(128, 128, 128, 0.144);
 
         @include desktopSize {
             flex-direction: row;
             justify-content: space-between;
+            padding: 3rem 5rem 4rem 7rem;
         }
 
         .benefits-list {
