@@ -37,7 +37,8 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background: url("../images/bg-pattern.svg") no-repeat;
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 50%;
 }
