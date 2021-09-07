@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    height: 100%;
+    min-height: 100%;
     font-size: 62.5%;
 }
 
@@ -23,7 +23,7 @@ body {
     background-image: url("../images/bg-pattern.svg");
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 350px;
+    background-size: 100% 50%;
 
     @include desktopSize {
         background-size: contain;
