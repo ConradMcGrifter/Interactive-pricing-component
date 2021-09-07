@@ -38,7 +38,7 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background: url("../images/bg-pattern.svg") no-repeat;
-  background-size: 100% 50vh;
+  background-size: contain;
 }
 
 @media only screen and (min-width: 550px) {
@@ -520,10 +520,18 @@ a {
   padding: 1.25rem 5rem 1.35rem 5rem;
   border-radius: 999px;
   margin-top: 3rem;
+  -webkit-transition: -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
+  transition: -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s, -webkit-transform 0.25s, -webkit-box-shadow 0.25s;
 }
 
 .pricing-card--container > .lower--container .start-trial-link:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(34, 34, 34, 0.342);
+          box-shadow: 0 5px 10px rgba(34, 34, 34, 0.342);
   color: white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media only screen and (min-width: 550px) {
